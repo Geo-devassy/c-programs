@@ -1,0 +1,65 @@
+#include <stdio.h>
+int main()
+{
+	int a[3][3],r,c,i,j,o,x;
+	printf("enter the no of rows and cols");
+	scanf("%d%d",&r,&c);
+	for (i=0;i<r;i++)
+	{
+		for(j=0;j<c;j++)
+		{
+			printf("enter a[%d][%d]->",i,j);
+			scanf("%d",&a[i][j]);
+		
+		}
+	}
+	for (i=0;i<r;i++)
+	{
+		for(j=0;j<c;j++)
+		{
+			printf("%d\t",a[i][j]);
+			
+		}
+		printf("\n");
+		
+	}
+	printf("enter the no of rows and cols");
+	scanf("%d%d",&r,&c);
+	for (i=0;i<r;i++)
+	{
+		for(j=0;j<c;j++)
+		{
+			printf("enter a[%d][%d]->",i,j);
+			scanf("%d",&a[i][j]);
+		
+		}
+	}
+	 
+	 
+	 
+	 
+	 for(i=0;i<r;i++)
+	{
+		for(j=0;j<c;j++)
+		{
+			printf("%d\t",a[j][i]);
+		}
+		printf("\n");
+
+    }
+    printf("\n");
+    for (i=0;i<r;i++)
+	{
+		for(j=0;j<c;j++)
+		{
+			printf("%d\t",a[i][j]+a[j][i]);
+			
+		}
+		printf("\n");
+		
+	}
+    
+  
+
+     return 0;
+}
